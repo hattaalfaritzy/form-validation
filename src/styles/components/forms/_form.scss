@@ -1,0 +1,19 @@
+.form-label {
+  @apply block font-normal text-xs text-dark;
+}
+
+.form-control {
+  @apply p-2.5 px-0 w-full text-dark text-xs bg-transparent;
+
+  &:read-only {
+    @apply focus:ring-0 focus:border-dark;
+  }
+}
+
+.form-error {
+  @apply border-special-danger focus:border-special-danger focus:ring-0
+}
+
+input:focus {
+    outline: none !important;
+}
